@@ -27,3 +27,33 @@ Menyimpan seluruh staging menjadi permanen, pesan commit mengikuti berdasarkan k
 $ git commit
 $ git commit -m "<pesan>"
 ```
+
+## Pengecekan Status Working Directory
+
+Bisa digunakan untuk melihat status baik yang sudah di staging area ataupun belum
+
+////////////
+
+## Management git remote
+
+```sh
+$ git remote <command> <argument>
+```
+
+Digunakan untuk menghubungkan antara git yang di komputer lokal dengan git yang ada di penyedia layanan git (github, gitlab, dll)
+
+git remote get-url <alias_remote>
+
+## syncronization
+
+Digunakan untuk sinkronisasi dari lokal ke remote
+
+```sh
+$ git push [-u] <tujuan_remote> <branch_lokal>
+```
+
+Digunakan untuk sinkronisasi dari remote ke lokal
+
+```sh
+$ git pull <target_remote> <branch_remote>
+```
